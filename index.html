@@ -15,8 +15,6 @@
       <div class="row">
         <div class="col-md-6 offset-md-3">
           <div class="card p-4">
-            <h2>Detalles del Empleado</h2>
-            <div id="resultado" class="mb-3"></div>
             <form id="empleadoForm">
               <div class="form-group mb-3">
                 <label for="aumento">Aumento de Salario ($):</label>
@@ -51,6 +49,16 @@
                 Cambiar Departamento
               </button>
             </form>
+            <table class="table table-bordered table-striped mt-2" id="tablaDatos">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Salario</th>
+                  <th scope="col">Departamento</th>
+                </tr>
+              </thead>
+              <tbody id="bodyTabla"></tbody>
+            </table>
           </div>
         </div>
       </div>
